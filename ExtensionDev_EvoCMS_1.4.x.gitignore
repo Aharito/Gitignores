@@ -28,5 +28,3 @@
 !/license
 #Include file beginning with readme. on same folder with .gitignore file
 !/readme.*
-#Include .gitignore file
-!/.gitignore
