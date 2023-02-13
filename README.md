@@ -1,4 +1,4 @@
-## Gitignores
+## Gitignores + workflow
  
 Примеры файлов .gitignore для разных workflows.
 
