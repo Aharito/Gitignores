@@ -1,0 +1,36 @@
+# Игнорировать все файлы 1-го уровня
+/*
+
+# Включить только нужные папки и их содержимое
+!/template/
+!/template/**
+!/views/
+!/views/**
+!/core/
+/core/**
+!/core/custom/
+/core/custom/**
+!/core/custom/packages/
+!/core/custom/packages/**
+
+# Включить папки и файлы из /assets
+!/assets/
+!/assets/**
+# Игнорим ненужное из /assets
+/assets/.thumbs/
+/assets/backup/
+/assets/cache/
+/assets/captcha/
+/assets/export/
+/assets/docs/
+/assets/import/
+/assets/site/
+
+# Картинки сейчас включены в репо (если раскомментить, то игнорятся)
+# 1. Игнорировать картинки в кастомной папке/template/src/images/
+#/template/src/images/
+# 2. Игнорировать картинки из стандартного расположения assets
+#/assets/images/
+
+# Не игнорировать файл .gitignore
+!.gitignore
