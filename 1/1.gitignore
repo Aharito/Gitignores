@@ -1,0 +1,30 @@
+# https://stackoverflow.com/questions/5533050/gitignore-exclude-folder-but-include-specific-subfolder
+# https://stackoverflow.com/a/29932318/1728448
+
+# Exclude files/folders in same directory as the .gitignore file
+/*
+
+# But include and all files in specific dir /assets/snippets/Compare/
+# path starts with this .gitignore file
+!/assets/
+/assets/*
+!/assets/snippets/
+/assets/snippets/*
+!/assets/snippets/Compare/
+
+#Include only one file Compare.tpl in /install/assets/plugins/Compare.tpl
+# path starts with this .gitignore file
+!/install/
+/install/*
+!/install/assets/
+/install/assets/*
+!/install/assets/plugins/
+# without the following line all files in the folder /install/assets/plugins/ would be included
+# but we are need only one Compare.tpl file
+/install/assets/plugins/*
+!/install/assets/plugins/Compare.tpl
+
+#Include file license on same folder with .gitignore file
+!/license
+#Include file beginning with readme. on same folder with .gitignore file
+!/readme.*
